@@ -9,7 +9,7 @@ public class Main {
         
         System.out.println(message);
         System.out.println(m.reverse(message));
-        
+         
     }
     
     public String getGreeting() {
@@ -17,6 +17,9 @@ public class Main {
     }
     
     public String reverse(String message) {
+        StringBuilder string = new StringBuilder(message);
+        StringBuilder reverseString = string.reverse();
+        message = reverseString.toString();
         return message;
     }
     
